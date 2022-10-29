@@ -1,6 +1,8 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/foundation/key.dart';
+// import 'package:flutter/src/widgets/framework.dart';
 
+import 'package:api_integration_mysql/ui/login_user.dart';
+import 'package:api_integration_mysql/uicontroller/everyhandtool.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -12,13 +14,15 @@ class WelcomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("data"),
-            SizedBox(
+            const Text("data"),
+            const SizedBox(
               height: 10,
             ),
-            FlatButton(
-              onPressed: () {},
-              child: Text("go back"),
+            ElevatedButton(
+              onPressed: () {
+                close(context, LoginUserState());
+              },
+              child: const Text("go back"),
             ),
           ],
         ),

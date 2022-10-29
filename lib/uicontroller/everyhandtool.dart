@@ -13,3 +13,7 @@ double getWidth(context, double percentage) {
 void to(BuildContext context, Widget screen) {
   Navigator.push(context, MaterialPageRoute(builder: (context) => screen));
 }
+
+void close(BuildContext context, Widget screen) {
+  Navigator.pop(context, MaterialPageRoute(builder: (context) => screen));
+}
