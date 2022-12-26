@@ -13,8 +13,9 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("data"),
+            const Text("Successfully Logged In "),
             const SizedBox(
               height: 10,
             ),
